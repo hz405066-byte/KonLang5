@@ -1,0 +1,27 @@
+* Проверка всех конструкций шага 1 *
+print{"Привет, "[inp_0]"!"}
+print{0,0,"Левый верх"}
+print{{"="*10}}
+set{фрукты={яблоко,груша,слива}}
+print{"Всего: "[len[фрукты]]}
+print{"Первое: "[фрукты.0]}
+print{"Второе: "[фрукты.[math{int 0+1}]]}
+set{i=math{[i]+1}}
+print{"2+3="[math{2+3}]" 10/4="[math{float 10/4}]}
+cycle5{
+  print{"Шаг "[i]}
+  set{i=math{[i]+1}}
+}
+cycle{
+  print{"бесконечный"}
+  if[[i]>=3]{ sc }
+  eli[[i]==2]{ print{"два"} }
+  els{ print{"иначе"} }
+}
+kon_меню{
+  clear
+  print{"меню"}
+}
+start:exec[kon_меню]
+ret[math{int 1+2}]
+program-exit

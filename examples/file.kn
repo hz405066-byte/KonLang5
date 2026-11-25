@@ -1,0 +1,7 @@
+* Работа с файлом: запись, чтение, дозапись *
+writeFile{"NOTE.TXT","Привет, файл!"}
+print{"--- Содержимое ---"}
+print{openFile{"NOTE.TXT"}}
+appendFile{"NOTE.TXT","\nВторая строка"}
+print{"--- После дозаписи ---"}
+print{openFile{"NOTE.TXT"}}
